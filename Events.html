@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+	<link rel="icon" type="image/jpg" href="logo.jpg">
+	<script src="js\jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css\events.css">
+</head>
+<body>
+	<header>
+	<div class="menu">
+<span class="bar"></span>		
+	</div>
+<nav>
+		<div class="nav-container">
+		<div class="logo">
+			<h2>Kuriftu Resort and Spa Afar</h2>
+		</div>
+		<ul>
+		<li><a class="active" href="index.php">Home</a></li>
+		<li><a href="about.html">About</a></li>	
+       <!-----dropdown link-------->     
+<div class="dropdown">
+  <button class="dropbtn">Booking</button>
+  <div class="dropdown-content">
+    <a href="Room booking.html">Room & Suite</a>
+    <a href="Bar and Resturant  Reservation.html">Bar & Resturant</a>
+    <a href="Event%20Booking.html">Events</a>
+  </div>
+</div>
+		<li><a href="Gallery.html">Gallery</a></li>
+ 	</ul> 
+	   </div>
+	</nav>
+</header>
+     <div class="room">
+				<h3>Events</h3>
+				<p>Our experienced team of professionals specialize in tailored events and can combine any setting, theme, cuisine, entertainment, and activity to suit your group’s individual needsTransform an executive session into a comfortable and inviting set-up by adding casual seating to recline on. Re-energize during a meeting with a creative coffee break or replenish with a rooftop picnic.Let the real Samara come to you. Collaborate with our expert culinary team and combine your ideas with our imaginative suggestions to create an unforgettable occasion.</p>
+			</div>
+
+		<!==========weeding==============>	
+			<div class="room-suit">
+	<div class="RS-img"><img src="kuriftu\wd.jpg"></div>
+	<div class="RS-text">
+		<p class="p1"><b>Wedding And Events</b></p>
+	<p>
+As the largest hotel in the city, Kuriftu Resort and Spa Afar offers versatile event space to accommodate private and elaborate affairs. Enjoy innovative dining options and abundant parking space. For creating a memorable occasion and unforgettable experience, choose Kuriftu Afar for your wedding. 
+Your detail wedding package is tailor made according to your wishes and every effort is made to ensure that all your dreams come true on your special day. Our hospitable dedicated staff will help in managing every step of the way in your special day, dream wedding enjoy tension less planning to execution wedding celebration. 
+</p> 
+<a href="Event Booking.php"><button>Book Now</button></a>	
+	</div>
+</div>
+	<!==========meeting and cofference==============>	
+
+		<div class="bar-resturant">
+	<div class="BR-text">
+		<p class="p1"><b>Meeting And Conference</b></p>
+		<p>
+Kuriftu Resort and Spa Afar is a brand-new ultramodern 3-star hotel conveniently located only five minutes from Sultan Alimirah Hanfare Airport with stylishly refurbished and culturally decorated International conference and meeting halls for its esteemed guests in Samara. There are different meeting halls with seating capacity ranging from 50-4000 fitting your choice. Take advantage of our full-service catering options and made to order services. In addition to business events, our event rooms accommodate any social events, comprising receptions, galas, weddings and banquets.</p>
+		<a href="Event Booking.php"><button>Book Now</button></a>		
+	</div>
+	<div class="BR-img"><img src="kuriftu\events.jpg"></div>
+</div>
+
+
+<footer class="footer">
+          <div class="con">
+                <div class="Row1">
+                      <div class="colmn">
+                             <h4>Address</h4>
+                             <ul class="order">
+                                <li class="list">SAMARA,ETHIOPIA</li>
+                             </ul>
+                      </div>
+                      <div class="colmn">
+                             <h4>contact us</h4>
+                             <ul class="order">
+                                <li class="list">Samara,Ethiopia</li>
+                                <li class="list">Tel:+25191669044</li>
+                                <li class="list">Email:devamesfin07@gmail.com</li>
+
+                             </ul>
+                      </div>
+                      <div class="colmn">
+                             <h4>social media</h4>
+                              <div class="social-links">
+       <!-- Add font awesome icons -->
+<a  href="https://www.facebook.com/Kuriftu-Resorts-and-Spa-AFAR-783632542016011/"><img src="kuriftu\facebook.png"></a>
+<a href="https://www.instagram.com/kurifturesortspa/"><img src="kuriftu\instagram.png"></a>
+<a  href="https://twitter.com/kuriftus?lang=en"><img src="kuriftu\twitter.png"></a>                   
+                          </div>
+                      </div>
+                      
+                </div>
+          </div>
+
+</footer>
+      <hr>
+      <div class="footer1" >
+                <h4>Kuriftu Resorts and Spa Afar @ 2014</h4>
+    </div>
+
+
+<script >
+	var isActive = false;
+	$('.menu').on('click', function () {
+		if (isActive){
+			$(this).removeClass('active');
+			$('body').removeClass('menu-open');
+		}else{
+
+			$(this).addClass('active');
+			$('body').addClass('menu-open');
+		}
+	 isActive = !isActive;	
+	});
+</script>
+</body>
+</html>

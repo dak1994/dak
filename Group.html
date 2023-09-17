@@ -1,0 +1,211 @@
+<html>
+<head>
+	<style>
+	.mamo h1{
+		font-family: 'sansita Swashed', cursive;
+		text-align: center;
+		color: forestgreen;
+	}
+	.mamo img{
+		display:inline-grid;
+	}
+	.mamo{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.img img{
+		width: 20%;
+		height: 40%;
+	}
+	.dave{
+		
+	border-radius: 100px;
+		text-align: center;
+		justify-content: center;
+		font-weight: 500;
+		margin: 0;
+		padding-top: 100px;
+		background: white;
+		font-family: 'sansita Swashed', cursive;
+	}
+	.dave table{
+			align-items: center;
+			text-align: center;
+		justify-content: center;
+			font-size: 30px;
+	}
+	nav{
+	height: 80px;
+	background: orange;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+}
+nav .logo{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
+}  
+ ul{
+	display: flex;
+	list-style: none;
+	
+}
+
+nav ul li{
+	margin: 0 5px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.6s ease;
+}
+nav ul li a:hover{
+	background: none;
+	color: cyan;
+}
+nav ul li a.active:hover{
+	color: cyan;
+}
+nav ul li a.active{
+	color: white;
+}
+nav .menu-btn .dak{
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	 
+
+}
+#click{
+	display: none;
+}
+.dak{
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	transform: translate(-50%, -50%);
+
+
+}
+.btn{
+	width: 35px;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+
+}
+
+@media screen and (max-width: 940px){
+
+	nav .menu-btn .dak{
+		display: block;
+	}
+
+	nav ul{
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background: #111;
+		height: 100vh;
+		width: 100%;
+	    display: block;
+		text-align: center;
+		transition: all 0.6s ease;
+	}
+	#click:checked ~  ul{
+	left: 0%;
+
+}
+nav ul li{
+	margin: 40px 0;
+
+}
+nav ul li a{
+	font-size: 23px;
+	display: block;
+
+}
+}
+	 
+	</style>
+	<title>Group memeberes</title>
+</head>
+<link rel="stylesheet" type="text/css" href="dak.css">
+<body bgcolor="skyblue">
+	 <div class="mamo">
+	 <nav>
+	 	<div class="logo">Ardi Ethiopia Hotel</div>
+	 		<input type="checkbox" id="click"> 
+	<label for="click" class="menu-btn">
+		<div class="dak" onclick="myFunction(this)">
+		<div class="btn"></div>
+		<div class="btn"></div>
+		<div class="btn"></div>
+	</div>
+	</label>
+	 	
+	<ul>
+		<li><a class="active" href="Home page.html">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="booking.html">Booking</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+		<li><a href="Group.html">Group members</a></li>
+	</ul>
+</nav>
+	 	<h1>Group memebers photo</h1>
+	 	<marquee BGCOLOR="YELLOW" BEHAVIOR="scroll" DIRECTION="right" WIDTH="50%" SCROLLDELAY="6" align="center">
+
+			<img src="image\dave.jpg"  alt="img" height="250" width="270">
+		    <img src="image\war.jpg" alt="img" height="250" width="250">
+		    <img src="image\amy 3.jpg" alt="img" height="250" width="230">
+		    <section align="bottom">
+		    <img src="image\abdu.jpg" alt="img" height="250" width="230">
+	       <img src="image\hibu.jpg" alt="img" height="250" width="230"></section></marquee>
+	     </div>
+	     <br>
+	     	
+	     <div class="dave">  
+	   	<table align="center" border="1">
+	   		<tr>
+	     			<th >Name</th>
+	     			<th >Id Numbers</th> 
+	     		</tr>
+	     		<tr>
+	     			<td >Dawit Yirdaw</td>
+	     			<td >1200534</td>
+	     		</tr>
+	     			<tr>
+	     			<td >Debero Kashun</td>
+	     			<td>1200534</td>
+	     		</tr>
+	     			<tr>
+	     			<td >Eyob Assefa</td>
+	     			<td >1200534</td>
+	     		</tr> 
+	     			<tr>
+	     			<td >Amleset Abreha</td>
+	     			<td >1200238</td>
+	     		</tr>
+	     			<tr>
+	     			<td >Alemagegnew G/slase</td>
+	     			<td >1200534</td>
+	     		</tr>
+	     			<tr>
+	     			<td >Abdu Mohamed</td>
+	     			<td >1200534</td>
+	     		</tr>
+	   	</table>
+	   		</div>
+
+</body>
+</html>

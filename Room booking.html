@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="icon" type="image/jpg" href="logo.jpg">
+	<title>Room and suite Reservation</title>
+	<link rel="stylesheet" type="text/css" href="css\R_booking.css">
+	<script src="js\jquery-1.11.3.min.js"></script>
+</head>
+<body style="background:url(kuriftu/bd2.jpg);background-size: 100%;">
+
+<header>
+	<div class="menu">
+<span class="bar"></span>		
+	</div>
+	<nav>
+		<div class="nav-container">
+		<div class="logo">
+			<h2>Kuriftu Resort and Spa Afar</h2>
+		</div>
+		<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>		
+<div class="dropdown">
+  <button class="dropbtn">Booking</button>
+  <div class="dropdown-content">
+    <a href="Room booking.html">Room & suite</a>
+    <a href="Bar and Resturant  Reservation.html">Bar & resturant</a>
+    <a href="Event Booking.html">Events</a>
+  </div>
+</div>
+		<li><a href="Gallery.html">Gallery</a></li>
+		 <li><a  href="select1.php">booking store</a></li>
+ 	</ul> 
+	   </div>
+	</nav>
+
+
+</header>
+
+<!------------here is booking form-------------------------->
+
+
+<div class="box">
+
+<form  method="post" action="R_booking_dbconnection.php" >
+
+ 
+<h1 >Booking Now</h1>
+
+ 
+
+
+
+
+		 <input type="text"  class="input" placeholder="Full name" name="fullname" required="full name">
+		 <input type="email" class="input" placeholder="Email" name="email" required="email">
+		 <input type="text" class="input" placeholder="phone number" name="phoneNumber" required="phone number">
+       <input   input type="text" class="input"  name="DepartureDate"placeholder="Departure Date" onfocus="(this.type='date')" required="date" required>
+		<input  input type="number" class="input" name="NoGuest"placeholder="No.of guests" required="" >
+		<input  input type="text" class="input"   name="ArrivalDate"placeholder="Arrival Date" onfocus="(this.type='date')" required="date" ><br>
+
+				<select  name="room_type" class="input1" required="">
+						<option value="1" class="option">Room Type</option>
+						<option value="Standard King room" class="option">Standard King room</option>
+						<option value="Sweet bed room" class="option">Sweet bed room</option>
+						<option value="Double bed room" class="option">Double bed room</option>
+					</select><br>
+            <button type="submit" value="submit"name="save">Book Now</button>
+
+         
+
+      </form>
+  
+</div>
+
+
+ 					<!-------------footer and contact us-------------------------->
+	<!---------  get in touch     ------------->
+
+
+<footer class="footer">
+					<div class="con">
+								<div class="Row1">
+											<div class="colmn">
+												     <h4>Address</h4>
+												     <ul class="order">
+												     		<li class="list">SAMARA,ETHIOPIA</li>
+												     </ul>
+											</div>
+											<div class="colmn">
+												     <h4>contact us</h4>
+												     <ul class="order">
+												     		<li class="list">Samara,Ethiopia</li>
+												     		<li class="list">Tel: +25191669044</li>
+												     		<li class="list">Email: devamesfin07@gmail.com</li>
+												     </ul>
+											</div>
+											<div class="colmn">
+												     <h4>social media</h4>
+												     	<div class="social-links">
+        <!-- Add font awesome icons -->
+<a  href="https://www.facebook.com/Kuriftu-Resorts-and-Spa-AFAR-783632542016011/"><img src="kuriftu\facebook.png"></a>
+<a href="https://www.instagram.com/kurifturesortspa/"><img src="kuriftu\instagram.png"></a>
+<a  href="https://twitter.com/kuriftus?lang=en"><img src="kuriftu\twitter.png"></a>
+  	 												
+  	 											</div>
+											</div>
+								
+					</div>
+			</div>
+</footer>
+			<hr>
+			<div class="footer1" >
+			<h4>Kuriftu Resorts and Spa Afar @ 2014</h4>
+		</div>
+
+
+
+    
+<script >
+	var isActive = false;
+	$('.menu').on('click', function () {
+		if (isActive){
+			$(this).removeClass('active');
+			$('body').removeClass('menu-open');
+		}else{
+
+			$(this).addClass('active');
+			$('body').addClass('menu-open');
+		}
+	 isActive = !isActive;	
+	});
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

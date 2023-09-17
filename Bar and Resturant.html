@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bar and Restuarant</title>
+	<link rel="icon" type="image/jpg" href="logo.jpg">
+	<link rel="stylesheet" type="text/css" href="css\barAndresturant.css">
+	
+		<script src="js\jquery-1.11.3.min.js"></script>
+</head>
+<body>  
+<header>
+	<div class="menu">
+<span class="bar"></span>		
+	</div>
+	<nav>
+		<div class="nav-container">
+		<div class="logo">
+			<h2 >Kuriftu Resort and Spa Afar</h2>
+		</div>
+		<ul>
+		<li ><a class="active" href="index.html">Home</a></li>
+		<li ><a href="about.html">About</a></li>
+					
+					<div class="dropdown">
+      <button class="dropbtn">Booking</button>
+  <div class="dropdown-content">
+        <a href="Room booking.html">Room & suite</a>
+        <a href="Bar%20and%20Resturant%20%20Reservation.html">Bar & resturant</a>
+        <a href="Event%20Booking.html">Events</a>
+       </div>
+   </div>
+
+
+		<li ><a href="Gallery.html">Gallery</a></li>
+
+	</ul> 
+	   </div>
+	</nav>
+
+			<div class="nav_img"><img src="Kuriftu\BR01.jpg"></div>
+</header>
+		
+<div class="Bar and Resturant">
+	<div class="BR-text">
+	<h3>Restaurants And Bars</h3>
+	<p>Indulge your palate with delicious international and local dishes passionately prepared with the freshest ingredients at Kuriftu Resort and Spa Afar. We offer indoor, alfresco and poolside dining with menus that promise delight in every bite. Start the day with a filling breakfast at ADD Restaurant. Or simply unwind after a day at our Sky Lounge, located on the 8th floor, which is the perfect place to relax and unwind with freshly squeezed juices at noon, signature cocktails at sunset and tasty snacks the whole day long with a breath-taking view of Samara. The four distinct venues take you on an extraordinary culinary journey, from authentic Asian cuisine at AsianBay to a vast buffet of Ethiopian and International flavours at ADD restaurant. In addition, our Connexions Lobby Lounge is the place to enjoy a quick coffee or leisurely cocktail, while Blu Jazz Bar is a vibrant social hub.</p>
+</div>
+</div>
+
+<section id="BR">
+  <div class="BR-img"><img src="Kuriftu\BR4.jpg"></div>
+			<div class="BR-text2">
+					<h3> Dak lounge</h3>
+					<p>
+		Whether you are meeting colleagues or catching up with friends and family, the Dak lounge is the perfect option for guests who enjoy a delicious, sweet treat with their perfectly brewed coffee or tea.</p>
+		<p> A broad selection of refreshments including fresh juices and smoothies are also the perfect accompaniment to a delicious all-day menu that includes sandwiches, salads, burgers, and wraps.
+				</p>
+		<a href="Bar and Resturant  Reservation.php"><button class="book-btn1">Book a Table</button></a>
+	</div>
+</section>
+
+<div class="after"></div>
+
+
+<section id="Br">
+			<div class="Br">
+				<div class="BR-text3">
+						<h3>Add Resturant</h3>
+							<p>
+							Travel all four corners of the globe in one day at ADD Restaurant,
+					 	    our all-day dining venue, serving international cuisine.
+							</p>
+    						<P> 
+    						ADD Restaurant is the culinary heart of the hotel, 
+   						 	offering all-day dining choices from a unique à la
+    	 					carte menu and a wide variety of buffet-style breakfast
+    	  					and lunch. An open-style kitchen and live cooking stations 
+    	  					bring a lively atmosphere into the restaurant
+    						</P>
+					<a href="Bar and Resturant  Reservation.php"><button class="book-btn2">Book a Table</button></a>	
+				</div>
+			<div class="BR-img2"><img src="Kuriftu\BR12.jpg"></div>
+		</div>
+ </section>
+ <div class="after1"></div>
+
+
+
+
+
+ 					<!-------------footer and contact us-------------------------->
+	<!---------  get in touch     ------------->
+
+
+<footer class="footer">
+					<div class="con">
+								<div class="Row1">
+											<div class="colmn">
+												     <h4>Address</h4>
+												     <ul class="order">
+												     		<li class="list">SAMARA,ETHIOPIA</li>
+												     </ul>
+											</div>
+											<div class="colmn">
+												     <h4>contact us</h4>
+												     <ul class="order">
+												     		<li class="list">Samara,Ethiopia</li>
+												     		<li class="list">Tel: +25191669044</li>
+												     		<li class="list">Email: devamesfin07@gmail.com</li>
+												     </ul>
+											</div>
+											<div class="colmn">
+												     <h4>social media</h4>
+												     	<div class="social-links">
+          <!-- Add font awesome icons -->
+<a  href="https://www.facebook.com/Kuriftu-Resorts-and-Spa-AFAR-783632542016011/"><img src="kuriftu\facebook.png"></a>
+<a href="https://www.instagram.com/kurifturesortspa/"><img src="kuriftu\instagram.png"></a>
+<a  href="https://twitter.com/kuriftus?lang=en"><img src="kuriftu\twitter.png"></a>
+  	 												
+  	 											</div>
+											</div>
+								
+					</div>
+			</div>
+</footer>
+			<hr>
+			<div class="footer1" >
+			<h4>Kuriftu Resorts and Spa Afar @ 2014</h4>
+		</div>
+
+
+<script >
+	var isActive = false;
+	$('.menu').on('click', function () {
+		if (isActive){
+			$(this).removeClass('active');
+			$('body').removeClass('menu-open');
+		}else{
+
+			$(this).addClass('active');
+			$('body').addClass('menu-open');
+		}
+	 isActive = !isActive;	
+	});
+</script>
+
+</body>
+</html>
